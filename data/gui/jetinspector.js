@@ -174,8 +174,6 @@ function launch(package, dirType, testFileName) {
 }
 
 function Run() {
-  if (!hasMain)
-    return alert("You need a 'main.js' file in order to run an extension");
   document.location.href = "jetpack:" + currentPackage.name + ":run";
 }
 
